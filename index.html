@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Infinito: divulgación de ciencia, investigación y tecnología.">
+  <title>Infinito | Ciencia, investigación y tecnología</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f4f4f8;
+      background:
+        radial-gradient(ellipse at 75% 15%, #40303f 0%, transparent 36%),
+        radial-gradient(ellipse at 15% 45%, #253348 0%, transparent 42%),
+        #101219;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header {
+      padding: 18px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 18px;
+      border-bottom: 1px solid #343745;
+    }
+
+    .marca {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-size: 19px;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    .simbolo {
+      color: #71d5ff;
+      font-size: 42px;
+      line-height: 1;
+      text-shadow: 0 0 18px #278dce;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 14px;
+      color: #dedfe7;
+    }
+
+    nav a:hover {
+      color: #77d8ff;
+    }
+
+    .portada {
+      text-align: center;
+      padding: 100px 20px 85px;
+      background:
+        radial-gradient(ellipse at center, #373444 0%, transparent 65%);
+    }
+
+    .portada .simbolo {
+      font-size: clamp(100px, 17vw, 175px);
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 64px);
+      letter-spacing: 8px;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    .lema {
+      margin-top: 17px;
+      color: #d9d9e4;
+      letter-spacing: 3px;
+      font-size: 14px;
+    }
+
+    .introduccion {
+      max-width: 650px;
+      margin: 28px auto 0;
+      color: #c5c7d2;
+    }
+
+    main section.contenidos {
+      padding: 60px 5%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .etiqueta {
+      color: #81d8ff;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 400;
+      margin: 5px 0 12px;
+    }
+
+    .descripcion {
+      color: #c5c7d2;
+      max-width: 680px;
+    }
+
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .tarjeta {
+      padding: 25px;
+      border: 1px solid #3b3e4b;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .tarjeta h3 {
+      font-size: 21px;
+      margin: 12px 0;
+    }
+
+    .tarjeta p {
+      color: #c5c7d2;
+      font-size: 15px;
+    }
+
+    .estado {
+      color: #9bdcf4;
+      font-size: 12px;
+    }
+
+    .mision {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    footer {
+      padding: 25px 5%;
+      border-top: 1px solid #343745;
+      text-align: center;
+      color: #b7b9c5;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .portada {
+        padding-top: 65px;
+      }
+
+      .lema {
+        letter-spacing: 1px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="marca" href="#inicio" aria-label="Infinito, portada">
+      <span class="simbolo">∞</span>
+      <span>INFINITO</span>
+    </a>
+
+    <nav aria-label="Menú principal">
+      <a href="#inicio">Portada</a>
+      <a href="#ciencia">Ciencia</a>
+      <a href="#investigacion">Investigación</a>
+      <a href="#tecnologia">Tecnología</a>
+      <a href="#actualidad">Actualidad</a>
+      <a href="#mision">Nuestra misión</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portada" id="inicio">
+      <span class="simbolo" aria-hidden="true">∞</span>
+      <h1>INFINITO</h1>
+      <p class="lema">CIENCIA · INVESTIGACIÓN · TECNOLOGÍA</p>
+      <p class="introduccion">
+        Un espacio para descubrir los avances que transforman
+        nuestro mundo, explorar nuevas ideas y acercarnos al
+        conocimiento con curiosidad y rigor.
+      </p>
+    </section>
+
+    <section class="contenidos" id="ciencia">
+      <span class="etiqueta">Área principal</span>
+      <h2>Ciencia</h2>
+      <p class="descripcion">
+        Descubrimientos, conceptos científicos y misterios del
+        universo explicados para todos.
+      </p>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <span class="estado">Artículo en preparación</span>
+          <h3>Agujeros negros</h3>
+          <p>
+            El horizonte de sucesos, la gravedad extrema y las
+            grandes preguntas sobre estos objetos cósmicos.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contenidos" id="investigacion">
+      <span class="etiqueta">Área principal</span>
+      <h2>Investigación</h2>
+      <p class="descripcion">
+        Estudios internacionales y avances que podrían cambiar
+        nuestra comprensión de la salud y del mundo.
+      </p>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <span class="estado">Artículo en preparación</span>
+          <h3>Alzheimer: nuevas vías de investigación</h3>
+          <p>
+            Qué sabemos sobre la enfermedad, las hipótesis sobre
+            su origen y las nuevas terapias en estudio.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contenidos" id="tecnologia">
+      <span class="etiqueta">Área principal</span>
+      <h2>Tecnología</h2>
+      <p class="descripcion">
+        Innovaciones, inteligencia artificial, robótica y
+        tecnologías emergentes.
+      </p>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <span class="estado">Artículo en preparación</span>
+          <h3>Inteligencia artificial</h3>
+          <p>
+            Qué está logrando hoy, cómo está transformando
+            distintas disciplinas y qué futuro podemos esperar.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contenidos" id="actualidad">
+      <span class="etiqueta">Al día</span>
+      <h2>Actualidad</h2>
+      <p class="descripcion">
+        Noticias breves sobre los avances científicos y
+        tecnológicos más relevantes, con enlaces a sus fuentes.
+        Añadiremos contenido cuando esté verificado.
+      </p>
+    </section>
+
+    <section class="contenidos" id="mision">
+      <div class="mision">
+        <span class="etiqueta">Quiénes somos</span>
+        <h2>Nuestra misión</h2>
+        <p>
+          Infinito es un espacio de divulgación dedicado a la
+          ciencia, la investigación y la tecnología, creado para
+          despertar curiosidad, compartir conocimiento y explorar
+          los avances que están transformando nuestro mundo.
+        </p>
+        <p>
+          Esta web se construye en colaboración con ChatGPT,
+          como ejemplo de cooperación entre creatividad humana
+          y tecnología al servicio del conocimiento.
+        </p>
+        <p>
+          Porque cada descubrimiento abre nuevas preguntas
+          y el conocimiento no tiene límites.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    INFINITO · CIENCIA · INVESTIGACIÓN · TECNOLOGÍA
+    <p>Proyecto en desarrollo. Los artículos y sus fuentes
+      se verificarán antes de su publicación.</p>
+  </footer>
+</body>
+</html>
